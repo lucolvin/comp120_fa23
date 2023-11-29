@@ -1,6 +1,7 @@
-import random
+import secrets
+
 def setRandom():
-    someNum = random.randrange(1,10)
+    someNum = secrets.SystemRandom().randrange(1,10)
     return someNum
 
 
