@@ -8,8 +8,7 @@ def inputSales():
     # Function to input daily sales values from the user. Returns a list of sales values.
     sales = []
     while True:
-        sale = input("Enter the daily sales or -1 to exit: ")
-        if sale == '-1':
+        if (sale := input("Enter the daily sales or -1 to exit: ")) == '-1':
             break
         sales.append(float(sale))
     return sales

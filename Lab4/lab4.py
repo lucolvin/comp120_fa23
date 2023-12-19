@@ -8,10 +8,9 @@ sales = []
 
 # Input sales values from the user
 while True:
-    sale = input("Enter the daily sales or -1 to exit: ")
 
     # Check for sentinel value
-    if sale == '-1':
+    if (sale := input("Enter the daily sales or -1 to exit: ")) == '-1':
         break
 
     # Convert the input to a float and append to the sales list
